@@ -1,0 +1,328 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.userApp {
+    float: left;
+}
+
+.flexUserApp {
+    width: 520px;
+    height: 755px;
+    margin: 15px;
+    margin-bottom: 0px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    display: flex;  
+    margin-top: 5px;
+}
+
+#navigation {
+    width: 100px;
+    background-color: #ECECED;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navButton {
+    cursor: pointer;
+    margin-bottom: 30px;
+    text-align: center;
+    border: none;
+    color: #ECECED;
+    text-decoration: none;
+    padding: 0px;
+}
+
+#friendList {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.friendItem {
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 70px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    font-size: 22px;
+    border: 1px groove;
+}
+
+
+#chatList {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.chatListItem {
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 70px;
+    width: 380px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    background-color: #eee;
+    border: 1px groove;
+}
+
+.kakaotalkCanvas {
+    width: 500px;
+    height: 600px;
+    margin: 15px;
+    margin-bottom: 0px;
+    padding: 10px;
+    border: 1px gray solid;
+    border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #bacee0;
+    max-height: 600px;
+    overflow-y: auto;
+    display: block;  
+    margin-top: 5px;
+}
+
+#pushNotification {
+    width: 510px;
+    height: 80px;
+    padding-left: 10px;
+    background-color: rgba(195, 195, 195, 0.911);
+    position: fixed; 
+    display: flex;
+    flex-direction: column;
+    z-index: 2; 
+    visibility: hidden;
+}
+
+#respondStatus {
+    width: 400px;
+    max-width: 400px;
+    height: 40px;
+    visibility: hidden;
+    position: fixed; 
+    display: flex;
+    z-index: 2; 
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.respondText {
+    font-size: 11px;
+}
+
+.chatListNameText {
+    font-size: 22px;
+    margin: 0px;
+}
+
+.chatListprevText {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.notiNameText {
+    font-size: 28px;
+    margin: 0px;
+}
+
+.notiChatText {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.loginCanvas {
+    width: 500px;
+    height: 735px;
+    margin: 15px;
+    margin-bottom: 0px;
+    padding: 10px;
+    border: 1px rgb(128, 128, 128) solid;
+    border-radius: 5px;
+    background-color: #ffe402;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.kakaologo {
+    width: 140px;
+    height: 140px;
+    margin: 20px;
+}
+
+.icons {
+    width: 45px;
+    height: 45px;
+}
+
+.chatList {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.messageBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 10px 0;
+}
+
+.userMessage {
+    background-color: #ffe402;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 70%;
+    font-size: 17px;
+    word-break: break-word;
+}
+
+.counterMessage {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 70%;
+    font-size: 17px;
+    word-break: break-word;
+}
+
+.imageMessage {
+    border-radius: 5px;
+    /* padding: 10px; */
+    max-width: 60%;
+    align-self: flex-end;
+    display: inline-block;
+}
+
+.imageMessage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.userTimestamp {
+    font-size: 12px;
+    color: #000000;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.counterTimestamp {
+    font-size: 12px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.inputContainer {
+    display: flex;
+    width: 520px;
+    height: 80px;
+    margin-left: 15px;
+    margin-top: 0px;
+    /* align-items: center; */
+    background-color: #e4e4af;
+    /* padding-right: 20px; */
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+}
+
+.messageTextarea {
+    width: 520px;
+    height: 80px;
+    border: 0px;
+    resize: none;
+}
+
+.buttonContainer {
+    width: 520px;
+    height: 55px;
+    margin-left: 15px;
+    margin-top: 0px;
+    border: 1px gray solid;
+    border-top: 0px;
+    border-radius: 0px 0px 5px 5px;
+    /* align-items: center; */
+    background-color: #ffffff;
+    /* padding-right: 20px; */
+    text-align: right;
+}
+
+.sendButton {
+    width: 60px;
+    height: 40px;
+    background-color: #ffe402;
+    color: #000000;
+    border: 0px;
+    border-radius: 6px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.IDContainer {
+    margin-left: 15px;
+}
+
+.ID {
+    width: 350px;
+    height: 50px;
+    border: 1px groove;
+}
+
+.PW {
+    width: 350px;
+    height: 50px;
+    border: 1px groove;
+}
+
+.loginButton {
+    width: 356px;
+    height: 50px;
+    background-color: whitesmoke;
+    color: #000000;
+    border: 0px;
+    border-radius: 6px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.registerButton {
+    width: 356px;
+    height: 50px;
+    background-color: whitesmoke;
+    color: #000000;
+    border: 0px;
+    border-radius: 6px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.addFriendText {
+    width: 280px;
+    height: 50px;
+    border: 1px groove;
+    margin-bottom: 10px;
+}
+
+.addFriendButton {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+}

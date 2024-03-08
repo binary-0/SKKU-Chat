@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet"> 
+    <script src="{{ url_for('static', path='/login.js') }}"></script>
+</head>
+
+<body>
+    <div class="userApp" id="userApp_id">
+        <div class="loginCanvas">
+            <img src="{{ url_for('static', path='/kakaologo.png') }}"  class="kakaologo" alt="">
+            <input type="text" class="ID" id="userID" placeholder="   Put User ID" />
+            <input type="text" class="PW" id="userPW" placeholder="   Put User PW" />
+            <button class="loginButton" id="loginButton_id">Login</button>
+            <p>or</p>
+            <button class="registerButton" id="registerButton_id">Register</button>
+        <div/>
+    </div>    
+</body>
+
+</html>

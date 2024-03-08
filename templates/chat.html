@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet"> 
+    <script src="{{ url_for('static', path='/chat.js') }}"></script>
+    
+</head>
+
+<body>
+    <div class="userApp" id="userApp_id">
+        <!-- <div class="IDContainer">
+            <input type="text" class="ID" id="userID" placeholder="Put User ID" />
+            <button class="sendButton" id="enterButton_id">Enter</button>
+        </div> -->
+        <div class="kakaotalkCanvas">
+            <div class="chatList">
+                
+            </div>
+        </div>
+        
+        <div class="inputContainer">
+            <textarea class="messageTextarea" id="messageTextarea_id"></textarea>
+        </div>
+
+        <div class="buttonContainer" id="buttonContainer_id">
+            <div id="respondStatus">
+            </div>
+
+            <button class="sendButton" id="sendButton_id">Send</button>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

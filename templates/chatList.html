@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet"> 
+    <script src="{{ url_for('static', path='/chatList.js') }}"></script>
+</head>
+
+<body>
+    <div class="flexUserApp" id="userApp_id">
+        <div id="pushNotification">
+        </div>
+
+        <div id="navigation">
+            <button class="navButton" id="friendListButton"> 
+                <img src="{{ url_for('static', path='/friendList.png') }}"  class="icons" alt="">
+            </button>
+            <button class="navButton" id="chatListButton">
+                <img src="{{ url_for('static', path='/chatList.png') }}"  class="icons" alt="">
+            </button>
+        </div>
+    
+        <div id="chatList">
+            <div class="ChatContainer">
+            </div>
+        </div>
+    </div>    
+</body>
+
+</html>
